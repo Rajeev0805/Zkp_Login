@@ -1,8 +1,8 @@
-import express from "express";
-import cors from "cors";
-import bodyParser from "body-parser";
-import fs from "fs";
-import { modPow } from "bigint-crypto-utils";
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const fs = require("fs");
+const { modPow } = require("bigint-crypto-utils");
 
 const app = express();
 const PORT = 4000;
