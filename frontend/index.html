@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZKP Login System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔐 Zero Knowledge Proof Login System</h1>
+  <p class="subtitle">Prove that you know your secret without revealing it!</p>
+
+  <!-- ====================== MAIN CONTAINER ====================== -->
+  <div id="main-container">
+    <!-- PROVER SECTION -->
+    <div class="panel" id="prover">
+      <h2>🧑‍💻 Prover (User)</h2>
+
+      <div class="inputs">
+        <input type="text" id="username" placeholder="Enter username" />
+        <input type="password" id="password" placeholder="Enter password" />
+      </div>
+
+      <div class="buttons">
+        <button id="register">Register</button>
+        <button id="commit">Send Commitment (r ➜)</button>
+        <button id="respond">Send Response (s ➜)</button>
+      </div>
+    </div>
+
+    <!-- VERIFIER SECTION -->
+    <div class="panel" id="verifier">
+      <h2>🖥️ Verifier (Server)</h2>
+      <div class="buttons">
+        <button id="challenge">⬅ Send Challenge (c)</button>
+        <button id="verify">Verify Proof</button>
+        <button id="clear-log" class="secondary">🧹 Clear Log</button>
+      </div>
+
+      <div class="status">
+        <p id="result">Status: Waiting...</p>
+        <div id="verifier-log"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================== ANIMATION AREA ====================== -->
+  <div id="animation-area"></div>
+
+  <footer>
+    <p>Made with ❤️ by Rajeev | Demonstrating Schnorr Zero Knowledge Protocol</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
