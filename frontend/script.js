@@ -2,7 +2,8 @@
 // ZKP Login System Frontend - by Rajeev
 // =============================================================
 
-const API_BASE = "http://localhost:4000"; // backend URL
+const API_BASE = "https://zkp-login-backend.onrender.com";
+
 
 // cryptographic parameters (shared between Prover and Verifier)
 const p = BigInt("0xffffffffffc5");
