@@ -191,19 +191,13 @@ document.getElementById("respond").onclick = async () => {
   }
 
 };
-
-// ---------- Send Challenge (for UI only) ----------
 document.getElementById("challenge").onclick = () => {
   animate("c", "Verifier", "Prover");
   setStatus("Challenge Sent!");
 };
-
-// ---------- Verify (for UI only) ----------
 document.getElementById("verify").onclick = () => {
   setStatus("Waiting for Prover response...");
 };
-
-// ---------- Clear Verifier Log ----------
 document.getElementById("clear-log").onclick = () => {
   const log = document.getElementById("verifier-log");
   log.innerHTML = ""; // clear all log messages
